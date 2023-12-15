@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const FormAddMoney = ({ setCount }) => {
+const FormAddMoney = ({ setCount, setIsValid }) => {
   const [input, setInput]= useState('')
   const [error, setError] = useState(false);
   const handleForm= e=>{
@@ -11,6 +11,7 @@ const FormAddMoney = ({ setCount }) => {
     }
     setError(false)
     setCount(Number(input))
+    setIsValid(true)
     console.log(input);
   }
 
