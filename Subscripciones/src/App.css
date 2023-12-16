@@ -160,8 +160,9 @@ p.error {
 }
 
 .single-item img {
-  width: 155px;
-  height: auto;
+  width: 70px;
+  height: 70px;
+  border-radius: 20%;
 }
 
 p.author {
